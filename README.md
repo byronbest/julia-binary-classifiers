@@ -18,4 +18,4 @@ Use julia -L predict_survival.jl then
 - predict_survival.run(7) to use TensorFlow (bug with @tf macro reported; probably fixed)
 - predict_survival.run(8) to use Flux (will not run ERROR: TypeError: non-boolean (ForwardDiff.Dual{Nothing,Bool,1}) used in boolean context)
  
-Will load saved state from run[1-8].m5 to determine training subset and best feature subset.
+Will load saved state from run[1-8].h5 to determine training subset and best feature subset.
