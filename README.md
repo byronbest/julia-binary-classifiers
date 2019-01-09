@@ -1,6 +1,8 @@
 # julia-binary-classifiers
 Classify gene data from R
 
+Gleason Score correlates with cancer recurrance hence survival. Attempt to predict GS > 7 based on gene expression data. These cases were all men with prostrate cancer. Example data may not be public, although it is not possible to identify individuals.
+
 Use R conv.R to convert bigmemory descriptors so Julia can load them (as lists).
 Use julia ready_data.jl to prepare data by filtering missing or Gleason Score = 7
 
