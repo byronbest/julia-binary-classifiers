@@ -36,6 +36,7 @@ nrows 150 ncols 400
 LIBSVM.SVM{Bool} Train accuracy: 82.00%
 LIBSVM.SVM{Bool} Test accuracy: 63.64%
 
+... oops had to use Adjoint, nrows is wrong in report
 julia> predict_survival.run(3)
 1411399 features
 422 celfiles
@@ -50,6 +51,7 @@ nrows 400 ncols 400
 DecisionTree.DecisionTreeClassifier Train accuracy: 100.00%
 DecisionTree.DecisionTreeClassifier Test accuracy: 54.55%
 
+... oops had to use Adjoint, nrows is wrong in report
 julia> predict_survival.run(4)
 1411399 features
 422 celfiles
