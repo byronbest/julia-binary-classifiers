@@ -1,6 +1,6 @@
 
-These runs all use the same 75 "best features" and 22 "training subset", compared with using the remaining 400 "others".
-Not much change in using 150, 250, or all 1.4M features. NaiveBayes however becomes unusable with 1.4M features.
+These runs all use the same 150 "best features" and 22 "training subset", compared with using the remaining 400 "others".
+Not much change in using 75, 250, or all 1.4M features. NaiveBayes however becomes unusable with 1.4M features.
 
 julia -L predict_survival.jl
 WARNING: using DecisionTree.fit! in module compare_model conflicts with an existing identifier.
