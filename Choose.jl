@@ -5,7 +5,7 @@ module Choose
 export without_replacement
 
 """
-From is Integer (the first few positive integers), array or range (to choose from).
+From is Integer n (the first few positive integers), array or range (to choose from).
 Choose == 0 means choose another, keep will have exactly one more true.
 Optional already-choosen items to keep flagged in Array{Bool,1}, any size.
 Returns Array{Bool,1}, size n or more, with at least choose many true.
