@@ -274,8 +274,8 @@ function swap_fold(attempt=0)
                 continue
             end
             "undo if no better"
-            s[j] = true
-            s[k] = false
+            @inbounds s[j] = true
+            @inbounds s[k] = false
             if (t += 1) > correlationAttempts break end
         end
         if !swapped_one
