@@ -288,6 +288,7 @@ function swap_fold(attempt=0)
 end
 
 function count_bits(bits,n,count)
+    @assert count<=n "cannot choose more than exist"
     on = zeros(Integer,count)
     off = zeros(Integer,n-count)
     j = k = 1
