@@ -325,7 +325,7 @@ function keep(these::BitArray{1})
     println("gs ",size(gs,1));
 end
 
-"Find sum of absolute correlation for training rows in these columns."
+"Find sum of absolute correlation for training columns in these rows."
 function correlate(these)
     global train, mat
     "view crashes when both these and train are boolean"
