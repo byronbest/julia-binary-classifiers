@@ -13,7 +13,7 @@ const medianThreshold = 0.5
 const varsThreshold = 0.3
 const wilcoxonThreshold = 0.05
 const foldFeatures = 150
-const correlationAttempts = 1000000
+const correlationAttempts = 1_000_000
 
 using CSV, DataFrames, Mmap, RData, HDF5
 using Random, Statistics, HypothesisTests, MultipleTesting
