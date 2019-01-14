@@ -72,7 +72,10 @@ julia> predict_survival.run(6)
   __0.453867 seconds__ (1.41 M allocations: 64.684 MiB, 16.63% gc time)
 data ready
 nrows 150 ncols 22
-  __4.897356 seconds__ (9.80 M allocations: 541.551 MiB, 8.40% gc time)
+┌ Warning: interpolate(A, BSpline(Interpolations.Linear()), Interpolations.OnGrid()) is deprecated, use interpolate(A, BSpline(Interpolations.Linear()))
+│   caller = KernelDensity.InterpKDE(::KernelDensity.UnivariateKDE{StepRangeLen{Float64,Base.TwicePrecision{Float64},Base.TwicePrecision{Float64}}}, ::Float64, ::Interpolations.BSpline{Interpolations.Linear}, ::Vararg{Any,N} where N) at hybrid.jl:150
+└ @ NaiveBayes ~/.julia/packages/NaiveBayes/y0OLB/src/hybrid.jl:150
+__4.897356 seconds__ (9.80 M allocations: 541.551 MiB, 8.40% gc time)
 NaiveBayes.HybridNB Train accuracy: 100.00%
 NaiveBayes.HybridNB Test accuracy: 65.75%
 nrows 150 ncols 400
