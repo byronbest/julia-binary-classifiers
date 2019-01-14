@@ -5,8 +5,9 @@ m = Inf
 k = 0
 train = nothing
 for id in cat(1:7;dims=1)
-    try
-        h5open(string("run",id,".h5"),"r") do io
+    file = string("run",id,".h5")
+    if isfile(file) try
+        h5open(file,"r") do io
 	    global m,k,train
             v = read(io,"state/v")
             println("#",id,"\t",v);
@@ -25,7 +26,7 @@ for id in cat(1:7;dims=1)
         end
     catch
         break
-    end
+    end end
 end
 println("#",k,"\t",m);
 k
