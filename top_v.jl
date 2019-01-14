@@ -4,7 +4,7 @@ using HDF5
 m = Inf
 k = 0
 train = nothing
-for id in cat(1:7,11:17;dims=1)
+for id in cat(1:7;dims=1)
     try
         h5open(string("run",id,".h5"),"r") do io
 	    global m,k,train
