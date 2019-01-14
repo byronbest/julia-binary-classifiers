@@ -12,7 +12,7 @@ const trainOneIn = 20
 const medianThreshold = 0.5
 const varsThreshold = 0.3
 const wilcoxonThreshold = 0.05
-const foldFeatures = 250
+const foldFeatures = 150
 const correlationAttempts = 1000000
 
 using CSV, DataFrames, Mmap, RData, HDF5
